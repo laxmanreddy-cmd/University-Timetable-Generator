@@ -1,0 +1,31 @@
+
+> ai-smart-timetable-generator@1.0.0 dev
+> next dev -p 3000
+
+   ▲ Next.js 15.5.18
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.31.163:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.6s
+ ○ Compiling / ...
+ ✓ Compiled / in 8.1s (1650 modules)
+ GET / 200 in 8915ms
+ GET / 200 in 141ms
+ ○ Compiling /register ...
+ ✓ Compiled /register in 4.7s (2455 modules)
+ GET /register 200 in 4837ms
+ GET /register 200 in 43ms
+ ○ Compiling /timetable ...
+ ✓ Compiled /timetable in 1364ms (2461 modules)
+ GET /timetable 200 in 1486ms
+ ○ Compiling /co/[id] ...
+ ✓ Compiled /co/[id] in 1009ms (2490 modules)
+ GET /co/co1 200 in 2183ms
+ GET /co/co2 200 in 72ms
+ GET /co/co3 200 in 84ms
+ GET / 200 in 58ms
+ GET /register 200 in 42ms
+ GET /timetable 200 in 39ms
+ GET /register 200 in 34ms
+ GET /timetable 200 in 33ms

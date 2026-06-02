@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 40% 98%;
+  --foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --muted: 214 32% 91%;
+  --muted-foreground: 215 16% 35%;
+  --primary: 190 95% 36%;
+  --primary-foreground: 0 0% 100%;
+  --border: 214 32% 87%;
+  --input: 214 32% 87%;
+  --ring: 190 95% 36%;
+}
+
+.dark {
+  --background: 220 34% 7%;
+  --foreground: 210 40% 98%;
+  --card: 220 28% 11%;
+  --card-foreground: 210 40% 98%;
+  --muted: 219 22% 17%;
+  --muted-foreground: 215 20% 72%;
+  --primary: 186 100% 42%;
+  --primary-foreground: 222 47% 11%;
+  --border: 217 19% 22%;
+  --input: 217 19% 22%;
+  --ring: 186 100% 42%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(14, 165, 233, 0.16), transparent 28%),
+    radial-gradient(circle at 90% 0%, rgba(16, 185, 129, 0.12), transparent 25%),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.glass {
+  background: color-mix(in srgb, hsl(var(--card)) 76%, transparent);
+  border: 1px solid color-mix(in srgb, hsl(var(--border)) 70%, transparent);
+  backdrop-filter: blur(18px);
+}
+
+@media print {
+  nav,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+}
